@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="710" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(34,197,94,0.22)" />
+      <stop offset="1" stop-color="rgba(56,189,248,0.22)" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="752" height="472" rx="34" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.16)" />
+  <rect x="56" y="56" width="688" height="408" rx="28" fill="url(#bg)" />
+  <g opacity="0.92">
+    <path
+      d="M400 170c78 0 142 62 142 138 0 40-18 76-46 102l-96 80-96-80c-28-26-46-62-46-102 0-76 64-138 142-138Z"
+      fill="rgba(0,0,0,0.18)"
+      stroke="rgba(255,255,255,0.28)"
+      stroke-width="8"
+    />
+    <circle cx="400" cy="308" r="46" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.25)" stroke-width="6" />
+  </g>
+  <text x="72" y="126" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="42" fill="rgba(255,255,255,0.88)" font-weight="700">On‑site Service</text>
+  <text x="72" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" fill="rgba(255,255,255,0.72)">Repairing at your location</text>
+</svg>
+

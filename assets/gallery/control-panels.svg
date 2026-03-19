@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="720" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(34,197,94,0.25)" />
+      <stop offset="1" stop-color="rgba(56,189,248,0.28)" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="752" height="472" rx="34" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.16)" />
+  <rect x="56" y="56" width="688" height="408" rx="28" fill="url(#bg)" />
+  <g opacity="0.9">
+    <rect x="252" y="176" width="296" height="184" rx="26" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.22)" />
+    <circle cx="318" cy="236" r="18" fill="rgba(239,68,68,0.9)" />
+    <circle cx="382" cy="236" r="18" fill="rgba(34,197,94,0.9)" />
+    <rect x="306" y="276" width="188" height="58" rx="14" fill="rgba(0,0,0,0.18)" />
+    <rect x="526" y="214" width="18" height="118" rx="9" fill="rgba(0,0,0,0.20)" />
+  </g>
+  <text x="72" y="126" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="42" fill="rgba(255,255,255,0.88)" font-weight="700">Panels</text>
+  <text x="72" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" fill="rgba(255,255,255,0.72)">0.5 HP to 20 HP · Control &amp; Protection</text>
+</svg>
+
