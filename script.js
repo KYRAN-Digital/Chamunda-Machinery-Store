@@ -11,7 +11,7 @@ const OWNER = {
 const SHOP = {
   name: "Chamunda Machinery Store",
   phoneE164: "+919784157240",
-  email: "chamunda_machinery_store@gmail.com",
+  email: "chamundamachinarystores@gmail.com",
   address:
     "Hari Singh Ji Ka Vera, Near Vaishno Devi Temple, Village Guda Jait Singh, Somesar, Pali, Rajasthan 306503",
   note:
