@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1080" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2A3F" />
+      <stop offset="0.55" stop-color="#0B1220" />
+      <stop offset="1" stop-color="#07341F" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 160) rotate(35) scale(420 290)">
+      <stop stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 200) rotate(145) scale(440 300)">
+      <stop stop-color="#22C55E" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="drop" x1="520" y1="150" x2="700" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow1)" />
+  <rect width="1200" height="630" fill="url(#glow2)" />
+
+  <rect x="70" y="86" width="1060" height="458" rx="34" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.16)" />
+
+  <g transform="translate(110 140)">
+    <rect width="98" height="98" rx="22" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.18)" />
+    <path d="M49 18c14 26 36 41 36 67a36 36 0 1 1-72 0c0-26 22-41 36-67Z" fill="url(#drop)" opacity="0.95" />
+    <path d="M32 79c5 7 29 7 34 0" stroke="rgba(255,255,255,0.60)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <g opacity="0.92">
+    <text
+      x="230"
+      y="205"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="54"
+      font-weight="900"
+      fill="rgba(255,255,255,0.92)"
+    >
+      Chamunda Machinery Store
+    </text>
+    <text
+      x="230"
+      y="255"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="22"
+      font-weight="700"
+      fill="rgba(255,255,255,0.74)"
+    >
+      Submersible Pumps (Openwell &amp; Borewell)
+    </text>
+    <text
+      x="230"
+      y="292"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="18"
+      fill="rgba(255,255,255,0.62)"
+    >
+      Sales · Service · Repairing · On‑site Service · 0.5HP–20HP
+    </text>
+  </g>
+
+  <g opacity="0.92">
+    <text
+      x="110"
+      y="392"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="20"
+      font-weight="800"
+      fill="rgba(255,255,255,0.86)"
+    >
+      Since 1982 · Somesar, Pali (Rajasthan)
+    </text>
+    <text
+      x="110"
+      y="430"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="18"
+      fill="rgba(255,255,255,0.70)"
+    >
+      WhatsApp / Call: +91 96606 67310 · Shop: +91 97841 57240
+    </text>
+    <text
+      x="110"
+      y="468"
+      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+      font-size="18"
+      fill="rgba(255,255,255,0.70)"
+    >
+      Email: chamundamachinarystores@gmail.com
+    </text>
+  </g>
+</svg>
+
