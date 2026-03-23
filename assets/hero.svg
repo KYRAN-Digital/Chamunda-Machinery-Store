@@ -13,10 +13,6 @@
       <stop stop-color="#22C55E" stop-opacity="0.28" />
       <stop offset="1" stop-color="#22C55E" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="drop" x1="760" y1="80" x2="980" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#38BDF8" stop-opacity="0.95" />
-      <stop offset="1" stop-color="#22C55E" stop-opacity="0.9" />
-    </linearGradient>
   </defs>
 
   <rect width="1600" height="600" fill="url(#bg)" />
@@ -37,58 +33,4 @@
     <path d="M1200 0V600" />
     <path d="M1400 0V600" />
   </g>
-
-  <!-- big drop + simplified pump -->
-  <g opacity="0.32">
-    <path
-      d="M900 96c48 92 124 146 124 238a124 124 0 0 1-248 0c0-92 76-146 124-238Z"
-      fill="url(#drop)"
-    />
-    <g transform="translate(816 270)">
-      <rect x="0" y="34" width="168" height="96" rx="24" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.18)" />
-      <rect x="22" y="56" width="124" height="50" rx="16" fill="rgba(255,255,255,0.09)" />
-      <circle cx="56" cy="82" r="14" fill="rgba(56,189,248,0.75)" />
-      <circle cx="112" cy="82" r="14" fill="rgba(34,197,94,0.75)" />
-      <path
-        d="M36 34c0-18 16-30 48-30s48 12 48 30"
-        stroke="rgba(255,255,255,0.35)"
-        stroke-width="6"
-        stroke-linecap="round"
-      />
-    </g>
-  </g>
-
-  <!-- headline -->
-  <g opacity="0.9">
-    <text
-      x="120"
-      y="220"
-      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
-      font-size="56"
-      font-weight="800"
-      fill="rgba(255,255,255,0.92)"
-    >
-      Chamunda Machinery Store
-    </text>
-    <text
-      x="120"
-      y="270"
-      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
-      font-size="22"
-      font-weight="600"
-      fill="rgba(255,255,255,0.72)"
-    >
-      Submersible Pumps · Openwell &amp; Borewell · Sales · Service · Repairing
-    </text>
-    <text
-      x="120"
-      y="312"
-      font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
-      font-size="18"
-      fill="rgba(255,255,255,0.62)"
-    >
-      Since 1982 · Somesar, Pali (Rajasthan)
-    </text>
-  </g>
 </svg>
-
