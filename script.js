@@ -119,6 +119,48 @@ function downloadTextFile({ filename, mimeType, text }) {
   URL.revokeObjectURL(url);
 }
 
+function preloadImage(url, timeoutMs = 6000) {
+  return new Promise((resolve, reject) => {
+    if (!url) reject(new Error("Missing url"));
+    const img = new Image();
+    const timeoutId = window.setTimeout(() => reject(new Error("Timeout")), timeoutMs);
+
+    img.onload = () => {
+      window.clearTimeout(timeoutId);
+      resolve(url);
+    };
+    img.onerror = () => {
+      window.clearTimeout(timeoutId);
+      reject(new Error("Load failed"));
+    };
+    img.src = url;
+  });
+}
+
+async function upgradeGalleryImage(imgEl) {
+  if (!imgEl) return;
+  const webp = imgEl.dataset.webp?.trim();
+  const jpg = imgEl.dataset.jpg?.trim();
+  const candidates = [webp, jpg].filter(Boolean);
+
+  for (const url of candidates) {
+    try {
+      await preloadImage(url);
+      imgEl.src = url;
+      return;
+    } catch {
+      // try next candidate
+    }
+  }
+}
+
+function upgradeGalleryImages() {
+  const images = Array.from(document.querySelectorAll("img[data-webp], img[data-jpg]"));
+  images.forEach((img) => {
+    void upgradeGalleryImage(img);
+  });
+}
+
 function init() {
   const year = $("year");
   if (year) year.textContent = String(new Date().getFullYear());
@@ -195,6 +237,8 @@ function init() {
       });
     });
   }
+
+  upgradeGalleryImages();
 }
 
 document.addEventListener("DOMContentLoaded", init);
