@@ -1,6 +1,5 @@
 // Customize optional social links here
-const INSTAGRAM_URL = ""; // e.g. "https://instagram.com/your_handle"
-const WEBSITE_URL = ""; // e.g. "https://your-website.com"
+const WEBSITE_URL = "https://kyran-digital.github.io/Chamunda-Machinery-Store/";
 const BUSINESS_HOURS = ""; // e.g. "Mon–Sat: 9:00 AM – 7:00 PM"
 
 const OWNER = {
@@ -119,48 +118,6 @@ function downloadTextFile({ filename, mimeType, text }) {
   URL.revokeObjectURL(url);
 }
 
-function preloadImage(url, timeoutMs = 6000) {
-  return new Promise((resolve, reject) => {
-    if (!url) reject(new Error("Missing url"));
-    const img = new Image();
-    const timeoutId = window.setTimeout(() => reject(new Error("Timeout")), timeoutMs);
-
-    img.onload = () => {
-      window.clearTimeout(timeoutId);
-      resolve(url);
-    };
-    img.onerror = () => {
-      window.clearTimeout(timeoutId);
-      reject(new Error("Load failed"));
-    };
-    img.src = url;
-  });
-}
-
-async function upgradeGalleryImage(imgEl) {
-  if (!imgEl) return;
-  const webp = imgEl.dataset.webp?.trim();
-  const jpg = imgEl.dataset.jpg?.trim();
-  const candidates = [webp, jpg].filter(Boolean);
-
-  for (const url of candidates) {
-    try {
-      await preloadImage(url);
-      imgEl.src = url;
-      return;
-    } catch {
-      // try next candidate
-    }
-  }
-}
-
-function upgradeGalleryImages() {
-  const images = Array.from(document.querySelectorAll("img[data-webp], img[data-jpg]"));
-  images.forEach((img) => {
-    void upgradeGalleryImage(img);
-  });
-}
-
 function init() {
   const year = $("year");
   if (year) year.textContent = String(new Date().getFullYear());
@@ -188,10 +145,6 @@ function init() {
   const website = $("btn-website");
   if (WEBSITE_URL?.trim()) setAnchorHref(website, WEBSITE_URL.trim(), { newTab: true });
   else hideElement(website);
-
-  const instagram = $("btn-instagram");
-  if (INSTAGRAM_URL?.trim()) setAnchorHref(instagram, INSTAGRAM_URL.trim(), { newTab: true });
-  else hideElement(instagram);
 
   const hours = $("business-hours");
   if (hours && BUSINESS_HOURS?.trim()) hours.textContent = BUSINESS_HOURS.trim();
@@ -237,8 +190,6 @@ function init() {
       });
     });
   }
-
-  upgradeGalleryImages();
 }
 
 document.addEventListener("DOMContentLoaded", init);
